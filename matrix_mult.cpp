@@ -4,6 +4,7 @@
 int main () {
 	int i,m,n,k,j,z;
 	FILE*fp;
+	printf("This program will multiply two matrices of sizes m×k and k×n respectively")
 	printf("give m \n");
 	scanf("%d",&m);
 	printf("give k \n");

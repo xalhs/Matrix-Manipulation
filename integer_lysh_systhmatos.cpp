@@ -80,7 +80,7 @@ for(i=1; i<=n;i++){
 }
 indic=1;
 if(indic==0){
-	cout<<"you think this is a motherfucking game you just gave me a NULL matrix try again next time: OUTPLAYED  OUTSMARTED  OUTSKILLED";
+	cout<<"you gave me a null matrix, next time run the program and give a nonzero input";
 	return 0; }
 	
 for (printi=1;printi<=n;printi++){
@@ -254,7 +254,13 @@ if (rank==n){
 				D[i]*=multconst/v1;
 				D[i]-=D[j]*multconst/v2;
 				detn=detn*v1/multconst;
-				cout<<"multiply row "<<i<<" by "<<multconst/v1<<" and subtract "<<multconst/v2<<" times row "<<j<<endl<<endl;
+				if (multconst/v2 <0){
+                    cout<<"multiply row "<<i<<" by "<<multconst/v1<<" and add "<<finalsolution(multconst/v2)<<" times row "<<j<<endl<<endl;
+                }
+                else{    
+                    
+				    cout<<"multiply row "<<i<<" by "<<multconst/v1<<" and subtract "<<multconst/v2<<" times row "<<j<<endl<<endl;
+                }
 					for (printi=1;printi<=n;printi++){
 				for(printj=1;printj<=n;printj++){
 					cout<<A[printi][printj]<<"\t";

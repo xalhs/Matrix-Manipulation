@@ -24,27 +24,26 @@ int main (){
 			}
 		}
 		if(indic==0){
-		cout<<"you think this is a motherfucking game nigga you just gave me a NULL matrix try again next time: OUTPLAYED   OUTSMARTED   OUTSKILLED";
-		return 0; }
+            
+	       	cout<<"This is a NULL matrix, please give a non zero element next time";
+		    return 0; }
 		for (printi=1;printi<=n;printi++){
-		for(printj=1;printj<=n;printj++){
-			cout<<A[printi][printj]<<"\t";
-}
-	cout<<endl;
-}
-cout<<endl;
+            for(printj=1;printj<=n;printj++){
+                cout<<A[printi][printj]<<"\t";
+            }
+	       cout<<endl;
+        }
+    cout<<endl;
 		
 	
 	for(j=1; j<=n-1;j++){
 		if (A[j][j]==0){
-			cout<<"my nigga"<<endl;
 		    for (trj=j;trj<=n;trj++){
 				for (tri=j;tri<=n;tri++){
 						if (A[tri][trj]!=0){
 							row=tri;
 							col=trj;
 							trindic=1;
-								cout<<"my nigga"<<endl;
 							if (col==j){
 							for (trk=1;trk<=n;trk++){
 								A[j][trk]+=A[row][trk];

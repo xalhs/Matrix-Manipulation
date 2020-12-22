@@ -59,7 +59,7 @@ for(i=1; i<=n;i++){
 	}
 } 
 if(indic==0){
-	cout<<"you think this is a motherfucking game you just gave me a NULL matrix try again next time: OUTPLAYED  OUTSMARTED  OUTSKILLED";
+	cout<<"you gave me a null matrix, next time run the program and give a nonzero input";
 	return 0; }
 for (printi=1;printi<=n;printi++){
 	for(printj=1;printj<=n;printj++){
