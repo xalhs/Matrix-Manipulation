@@ -4,7 +4,7 @@
 int main () {
 	int i,m,n,k,j,z;
 	FILE*fp;
-	printf("This program will multiply two matrices of sizes m×k and k×n respectively")
+	printf("This program will multiply two matrices of sizes m by k and k by n respectively \n");
 	printf("give m \n");
 	scanf("%d",&m);
 	printf("give k \n");
@@ -18,13 +18,13 @@ int main () {
 	fp=fopen("GIGALUL.dat","w");
 	for (i=1;i<=m;i++){
 		for(j=1;j<=k;j++){
-			printf("give a[%d][%d] \n", i,j);
+			printf("give a[%d][%d] element \n", i,j);
 			scanf("%lf", &a[i][j]);
 		}
 	}
 	for (i=1;i<=k;i++){
 		for(j=1;j<=n;j++){
-			printf("give b[%d][%d] \n", i,j);
+			printf("give b[%d][%d] element \n", i,j);
 			scanf("%lf", &b[i][j]);
 		}
 	}
