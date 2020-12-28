@@ -52,8 +52,8 @@ int rational_indic = 0;
 
 indic = 0;
 
-cout<<"you will be asked to give the elements of a matrix, accepted inputs are: integers (e.g. 5) Decimal numbers (e.g 2.1542332) or fractions (e.g 3/8)"<<endl<<
-cout<<"avoid adding decimals along with fractions because if that happens fractions will be converted to decimals"<<endl;<<endl;
+cout<<"you will be asked to give the elements of a matrix, accepted inputs are: integers (e.g. 5) Decimal numbers (e.g 2.1542332) or fractions (e.g 3/8)"<<endl
+cout<<"avoid adding decimals along with fractions because if that happens fractions will be converted to decimals"<<endl<<endl;
 string A_str[n+1][n+1];
 for(i=1; i<=n;i++){
 	for(j=1; j<=n;j++){
@@ -103,7 +103,6 @@ for(i=1; i<=n;i++){
 	}
 }
 
-if (in
 if (indic == 0){
     cout<<"this is a NULL matrix, has rank and determinant 0 and cannot be inversed please do at least one non-zero input next time"<<endl;
     return 1;
