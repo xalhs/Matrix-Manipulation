@@ -3,6 +3,15 @@ This is a program I developed in my first year of university while taking a line
 
 
 ## Quick Start
+Run on linux without installing boost library
+
+0. ```cd/tmp``` [OPTIONAL]
+1. ```git clone git@github.com:xalhs/Matrix-Manipulation.git``` (clone repo)  
+    - ```cd Matrix-Manipulation```
+2. ```wget https://dl.bintray.com/boostorg/release/1.75.0/source/boost_1_75_0.tar.gz``` (download boost library)
+3. ```tar -zxvf boost_1_75_0``` (untar downloaded file)
+4. ```g++ Row_operations.cpp -I boost_1_75_0/ -std=c++11```  (compile)
+5. ```./a.out```  (run executable file)
 
 ## Example 
 
